@@ -1,0 +1,233 @@
+:root{
+    --white:#FFFFFF;
+    --black:#000000;
+}
+
+body{
+    max-width: 1024px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: var(--black);
+}
+h1, 
+h2, 
+h3, 
+p, 
+span, 
+a {
+    font-family: 'Lato', sans-serif;
+    line-height: auto;
+    text-decoration: none;
+    color: var(--white);
+    margin: 0;
+}
+
+.container{
+    max-width: 100%;
+    height: 100%;
+    padding: 88px 38px;
+}
+.container .container-filho{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.container .perfil img{
+    border-radius: 50%;
+}
+
+.container .container-filho .descricao{
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    justify-content: center;
+}
+
+.container .container-filho .descricao h1{
+    font-size: 48px;
+    font-weight: 400;
+    padding-bottom: 24px;
+}
+
+.container .container-filho .descricao h3{
+    font-size: 24px;
+    font: 300;
+    padding-bottom: 24px;
+}
+
+.container .container-filho .descricao span{
+    font-size: 16px;
+    font-weight: 300px;
+}
+
+.container .container-filho .descricao span i{
+    margin-right: 16px;
+}
+
+.container .container-filho .descricao a i{
+    font-size: 56px;
+    padding-right: 16px;
+    margin-top: 24px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/*container projetos*/
+.container .container-projetos{
+    margin-top: 88px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .container-projetos h2{
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 48px;
+    text-align: center;
+}
+.container .container-projetos .container-projetos-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.container .container-projetos .projetos{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+.container .container-projetos .projetos .animate-image .descricao-projeto{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 24px;
+    background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  transform: translateY(300px);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.container .container-projetos .projetos .animate-image .descricao-projeto p {
+    font-size: 18px;
+    padding: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.container .container-projetos .projetos .animate-image .descricao-projeto a{
+    margin: 16px;
+    max-width: 100px;
+}
+
+.container .container-projetos .projetos .animate-image .descricao-projeto a{
+    margin-left: 16px;
+}
+
+.container .container-projetos .projetos .animate-image{
+    cursor: pointer;
+}
+.container .container-projetos .botoes{
+    display: flex;
+    justify-content: center;
+    margin-top: 64px;
+}
+
+.container .container-projetos .botoes i{
+    margin-left: 16px;
+}
+
+.btn-outline{
+    outline: 1px solid var(--white);
+    color: var(--white);
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 400;
+    transition: all 0.5s ease-in-out;
+    margin-right: 48px;
+}
+
+.btn-default{
+    background-color: var(--white);
+    color:var(--black);
+    padding: 12px 24px;
+    border-radius:  50px;
+    font-size: 18px;
+    font-weight: 400;
+    transition: all 0.5s ease-in-out;
+}
+
+footer p {
+    text-align: center;
+    font-size: 18px;
+    margin: 16px;
+}
+
+/*animação*/
+.container .container-projetos .projetos .animate-image:hover .descricao-projeto{
+    transform: translateY(8px);
+    opacity: 1 ;
+}
+
+.btn-outline:hover{
+    outline: none;
+    background-color: var(--white);
+    color: var(--black);
+    transform: translateY(-8px);
+}
+
+.btn-default:hover{
+    background-color: transparent;
+    outline: 1px solid var(--white);
+    color: var(--white);
+    transform: translateY(-8px);
+}
+
+.container .container-filho .descricao a i:hover{
+    transform: translateY(-8px) scale(1.05);
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000000;
+}  
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: #000000;
+} 
+::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 16px;
+}
+
+/*midia*/
+
+@media only screen and (max-width:600px) {
+    .container .container-filho .descricao{
+        margin-left: 0;
+        text-align: center;
+        margin-top: 36px;
+    }
+}
+
+@media only screen {
+    
+}
