@@ -3,4 +3,4 @@
 ##Screenshot
 | Website Image |
 |----------|
-| ![App Screenshot](screenshot/foto.jpeg) |
+| ![App Screenshot](screenshot/screen.jpeg) |
